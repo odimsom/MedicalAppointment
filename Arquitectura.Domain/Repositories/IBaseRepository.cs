@@ -1,9 +1,8 @@
 ﻿
 using Arquitectura.Domain.Result;
-using System.Formats.Tar;
+
 using System.Linq.Expressions;
-using System.Numerics;
-using System.Threading.Tasks;
+
 
 namespace Arquitectura.Domain.Repositories
 {
