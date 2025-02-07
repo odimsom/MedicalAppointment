@@ -1,5 +1,4 @@
 ﻿
-
 namespace Arquitectura.Domain.Result
 {
     public class OperationResult

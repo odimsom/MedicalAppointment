@@ -1,11 +1,15 @@
 ﻿
 using Arquitectura.Domain.Base;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Arquitectura.Domain.Entities
 {
     public sealed class Appointments : MedicalAppointmentCUatBaseEntity
     {
-        public int AppointmentID { get; set; }
+        [Column("AppointmentID")]
+        [Key]
+        public override int Id { get ; set ; }
 
         public int PatientID { get; set; }
 

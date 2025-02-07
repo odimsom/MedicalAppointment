@@ -1,9 +1,14 @@
 ﻿
+using System.ComponentModel.DataAnnotations.Schema;
+using System.ComponentModel.DataAnnotations;
+
 namespace Arquitectura.Domain.Entities
 {
-    public sealed class Notifications
+    public sealed class Notifications : Base.BaseEntity<int>
     {
-        public int NotificationID { get; set; }
+        [Column("NotificationID")]
+        [Key]
+        public override int Id { get; set; }
 
         public int UserID { get; set; }
 

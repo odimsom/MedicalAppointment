@@ -1,12 +1,16 @@
 ﻿
 
 using Arquitectura.Domain.Base;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.ComponentModel.DataAnnotations;
 
 namespace Arquitectura.Domain.Entities
 {
     public sealed class NetworkType : MedicalAppointmentBaseEntity
     {
-        public int NetworkTypeId { get; set; }
+        [Column("NetworkTypeId")]
+        [Key]
+        public override int Id { get; set; }
 
         public string? Name { get; set; }
     }

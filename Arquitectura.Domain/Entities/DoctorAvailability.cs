@@ -1,10 +1,15 @@
 ﻿
 
+using System.ComponentModel.DataAnnotations.Schema;
+using System.ComponentModel.DataAnnotations;
+
 namespace Arquitectura.Domain.Entities
 {
-    public sealed class DoctorAvailability
+    public sealed class DoctorAvailability : Base.BaseEntity<int>
     {
-        public int AvailabilityID { get; set; }
+        [Column("AvailabilityID")]
+        [Key]
+        public override int Id { get; set; }
 
         public int DoctorID { get; set; }
 
