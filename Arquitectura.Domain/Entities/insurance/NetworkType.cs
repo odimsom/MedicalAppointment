@@ -4,14 +4,14 @@ using Arquitectura.Domain.Base;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
 
-namespace Arquitectura.Domain.Entities
+namespace Arquitectura.Domain.Entities.insurance
 {
-    public sealed class Roles : MedicalAppointmentBaseEntity
+    public sealed class NetworkType : MedicalAppointmentBaseEntity<int>
     {
-        [Column("RoleID")]
+        [Column("NetworkTypeId")]
         [Key]
         public override int Id { get; set; }
 
-        public string RoleName { get; set; }
+        public string? Name { get; set; }
     }
 }

@@ -2,10 +2,11 @@
 
 using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
+using Arquitectura.Domain.Base;
 
-namespace Arquitectura.Domain.Entities
+namespace Arquitectura.Domain.Entities.appointments
 {
-    public sealed class DoctorAvailability : Base.BaseEntity<int>
+    public sealed class DoctorAvailability : BaseEntity<int>
     {
         [Column("AvailabilityID")]
         [Key]

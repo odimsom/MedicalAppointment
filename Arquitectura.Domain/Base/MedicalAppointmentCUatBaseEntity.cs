@@ -2,7 +2,7 @@
 
 namespace Arquitectura.Domain.Base
 {
-    public abstract class MedicalAppointmentCUatBaseEntity : BaseEntity<int>
+    public abstract class MedicalAppointmentCUatBaseEntity<Ttype> : BaseEntity<Ttype>
     {
         protected MedicalAppointmentCUatBaseEntity()
         {

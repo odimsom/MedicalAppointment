@@ -4,9 +4,9 @@ using Arquitectura.Domain.Base;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
 
-namespace Arquitectura.Domain.Entities
+namespace Arquitectura.Domain.Entities.users
 {
-    public sealed class Doctors : MedicalAppointmentBaseEntity
+    public sealed class Doctors : MedicalAppointmentBaseEntity<int>
     {
         [Column("DoctorID")]
         [Key]
@@ -24,7 +24,7 @@ namespace Arquitectura.Domain.Entities
 
         public string? Bio { get; set; }
 
-        public Decimal? ConsultationFee { get; set; }
+        public decimal? ConsultationFee { get; set; }
 
         public string? ClinicAddress { get; set; }
 

@@ -16,15 +16,11 @@ namespace Arquitectura.Domain.Repositories
 
         Task<OperationResult> UpdateEntityAsync(TEntity entity);
 
-        Task<OperationResult> RemuveEntityAsync(TEntity entity);
-
         Task<OperationResult> SaveEntityAsync(TEntity entity);
         
         Task<List<TEntity>> GetAll(TEntity entity);
 
         Task<OperationResult> GetAll(Expression<Func<TEntity, bool>> filter);
-
-        Task<OperationResult> GetEntityById(int id);
 
         Task<bool> Exists(Expression<Func<TEntity, bool>> filter);
     }

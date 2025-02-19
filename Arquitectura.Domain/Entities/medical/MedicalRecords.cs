@@ -3,9 +3,9 @@ using Arquitectura.Domain.Base;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
 
-namespace Arquitectura.Domain.Entities
+namespace Arquitectura.Domain.Entities.medical
 {
-    public sealed class MedicalRecords : MedicalAppointmentCUatBaseEntity
+    public sealed class MedicalRecords : MedicalAppointmentCUatBaseEntity<int>
     {
         [Column("RecordID")]
         [Key]

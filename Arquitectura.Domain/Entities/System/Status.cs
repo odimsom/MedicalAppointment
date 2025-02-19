@@ -2,10 +2,11 @@
 
 using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
+using Arquitectura.Domain.Base;
 
-namespace Arquitectura.Domain.Entities
+namespace Arquitectura.Domain.Entities.System
 {
-    public sealed class Status : Base.BaseEntity<int>
+    public sealed class Status : BaseEntity<int>
     {
         [Column("StatusID")]
         [Key]

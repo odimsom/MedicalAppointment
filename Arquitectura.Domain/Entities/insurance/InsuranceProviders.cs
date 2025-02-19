@@ -3,9 +3,9 @@ using Arquitectura.Domain.Base;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
 
-namespace Arquitectura.Domain.Entities
+namespace Arquitectura.Domain.Entities.insurance
 {
-    public sealed class InsuranceProviders : MedicalAppointmentBaseEntity
+    public sealed class InsuranceProviders : MedicalAppointmentBaseEntity<int>
     {
         [Column("InsuranceProviderID")]
         [Key]
@@ -41,6 +41,6 @@ namespace Arquitectura.Domain.Entities
 
         public string? AcceptedRegions { get; set; }
 
-        public Decimal? MaxCoverageAmount { get; set; }
+        public decimal? MaxCoverageAmount { get; set; }
     }
 }
